@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(218, 125, 125, 0.5); /* Red glow shadow */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff4444;
+    text-shadow: 0 0 5px #d67373; /* Red glowing text effect */
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px; /* Reduced padding */
+    min-height: 10vh;
+}
+
+
+/* Introduction Section */
+.intro-content {
+    display: flex;
+    flex-direction: row; /* Change to row to align photo and text side by side */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    width: 70%; /* Set width to 70% */
+    margin: 0 auto; /* Center the box */
+    text-align: left;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ff4444;
+}
+
+
+
+.intro-text {
+    max-width: 70%; /* Keeps text in proportion */
+    text-align: center;
+    color: #fff;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    color: #fff; /* Make the initial greeting white */
+}
+
+.intro-text .intro-greeting {
+    display: inline; 
+    font-weight: normal;
+    color: #fff;
+}
+
+.intro-text .intro-name {
+    display: inline; /* Keeps name on the same line */
+    font-weight: bold;
+    color: #ba574c; /* Red color for name */
+}
+
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+/* About & Skills Sections */
+.about-box,
+.skills-box {
+    background-color: #111;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 65%;
+    text-align: center;
+    box-shadow: 0 0 5px #d67373; /* Red glow shadow */
+}
+.about-box h2,
+.skills-box h2 {
+    color: #ff4444;
+}
+
+.about-box p,
+.skills-box p {
+    margin: 10px 0;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 5px #d67373; /* Red glow shadow */
+    transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+    color: #ff4444;
+}
+
+.project-card p {
+    color: #ddd;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Centering "Contact Me" heading */
+#contact h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff4444;
+    margin-bottom: 20px;
+}
+
+/* Styling for contact icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contact-icon {
+    width: 50px;  /* Set desired width */
+    height: 50px; /* Set desired height */
+    border-radius: 50%; /* Make icons circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect to translate icons slightly upward */
+.contact-icon:hover {
+    transform: translateY(-5px); /* Moves the icon up on hover */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #ff4444;
+}
